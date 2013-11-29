@@ -3,12 +3,12 @@ import java.io.*; import java.util.*; import symbols.*;
 public class Lexer {
    public static int line = 1;
    char peek = ' ';
-   Hashtable words = new Hashtable();
-   void reserve(Word w) { words.put(w.lexeme, w); }
+   Hashtable words = new Hashtable();                     //新建一个名为words的哈希表
+   void reserve(Word w) { words.put(w.lexeme, w); }       //将词素作为key，把word值作为value插入哈希表
 
-   public Lexer() {
+   public Lexer() {                                       //词法分析器
 
-      reserve( new Word("if",    Tag.IF)    );
+      reserve( new Word("if",    Tag.IF)    );            //把if插入哈希表
       reserve( new Word("else",  Tag.ELSE)  );
       reserve( new Word("while", Tag.WHILE) );
       reserve( new Word("do",    Tag.DO)    );
