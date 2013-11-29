@@ -18,7 +18,7 @@ public class Type extends Word 					//继承了Word类，用于识别并映射为类型
       else return false;
    }
 
-   public static Type max(Type p1, Type p2 ) 	//类型转换，返回最“大”的类型
+   public static Type max(Type p1, Type p2 ) 	//类型转换，返回最“高”的类型
    {
       if ( ! numeric(p1) || ! numeric(p2) ) return null;
       else if ( p1 == Type.Float || p2 == Type.Float ) return Type.Float;
