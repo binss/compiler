@@ -1,6 +1,6 @@
 package lexer;
 import java.io.*; import java.util.*; import symbols.*;
-public class Lexer 
+public class Lexer             							  //´Ê·¨·ÖÎöÆ÷
 {
    public static int line = 1;
    char peek = ' ';
